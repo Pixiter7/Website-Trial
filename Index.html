@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+<!-- **********************************************************************************************************************
+Developed by: Kushagra
+2024
+Distribution prohibited at any cost
+********************************************************************************************************************** -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affwa_Website_Prototype</title>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'section section aside'
+                'hr hr hr'
+                'footer footer footer';
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        .navbar {
+            border: 2px solid black;
+            padding: 7px;
+            background-color: blanchedalmond;
+        }
+
+        .navbar ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar li a {
+            font-size: 18px;
+            text-decoration: none;
+            padding: 7px 35px;
+            user-select: none;
+        }
+
+        .navbar li a:hover {
+            color: goldenrod;
+        }
+
+        .navbar li a:active {
+            color: red;
+        }
+
+        section {
+            grid-area: section;
+            padding: 7px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-around;
+            row-gap: 23px;
+        }
+
+        section h3 {
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        /* #card1::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url('Lockscreen.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 250px;
+            width: 250px;
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 0.3;
+            transform: scale(1.5);
+            transition: all ease-in-out 3s;
+        } */
+        .cardimg {
+            background: url('Lockscreen.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 250px;
+            width: 250px;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            transition: all ease-in-out 0.6s;
+            margin-top: -18.3px;
+        }
+
+        .cardimg:hover {
+            transform: scale(1.2);
+        }
+
+        .cards {
+            border: 2px solid red;
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            overflow: hidden;
+            background-color: transparent;
+        }
+
+
+        aside {
+            grid-area: aside;
+            padding: 7px;
+        }
+
+        footer {
+            grid-area: footer;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="navbtn"><a href="#">Home</a></li>
+                    <li class="navbtn"><a href="#">About</a></li>
+                    <li class="navbtn"><a href="#">Contact</a></li>
+                    <li class="navbtn"><a href="#">Queries</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h3>This is Section</h3>
+            <div class="cards" id="card1">
+                This is card - 1
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card2">
+                This is card - 2
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card3">
+                This is card - 3
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card4">
+                This is card - 4
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card5">
+                This is card - 5
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card6">
+                This is card - 6
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card7">
+                This is card - 7
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card8">
+                This is card - 8
+                <div class="cardimg">
+                </div>
+            </div>
+            <div class="cards" id="card9">
+                This is card - 9
+                <div class="cardimg">
+                </div>
+            </div>
+        </section>
+        <aside>
+            <h3>This is Aside</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore facere quaerat quam sit excepturi
+                consectetur sapiente qui corporis rem. Maxime quis illo qui commodi similique beatae, accusamus numquam
+                quaerat sapiente velit at nemo ipsum esse a aliquam sunt! Eos facere cum dolore debitis voluptatem
+                facilis totam distinctio veniam reiciendis eius earum eligendi dolor magni omnis, veritatis accusamus
+                explicabo vero hic. Error fuga quam dignissimos mollitia quis nesciunt molestias saepe veritatis
+                exercitationem eius harum repellendus quod nihil quisquam, facilis reprehenderit doloremque odit dolor
+                deleniti necessitatibus dicta repudiandae non. Corporis quod vel nostrum nisi, mollitia ab quisquam ad
+                laboriosam dicta, praesentium esse quas explicabo ipsa eveniet amet quia ex est dignissimos distinctio
+                exercitationem ratione illum alias! Inventore itaque distinctio quas repellendus consequatur eius in
+                odio id eum vel quisquam voluptate quo iure cum expedita neque aperiam deleniti, voluptatem corporis
+                unde ad exercitationem eos labore quidem? Corrupti iusto unde, sapiente iste aliquam a earum quasi
+                numquam maiores ducimus id praesentium nam animi. Dolorem repellendus iure, explicabo officiis quam
+                assumenda, non sapiente mollitia quae in nam perspiciatis vel maiores cum ducimus esse quos velit. Harum
+                possimus eveniet, nesciunt quod atque fuga corrupti dolores fugiat! Impedit sit voluptates culpa
+                voluptas ipsam libero provident est, hic doloremque? Dignissimos nisi porro qui cum facere reiciendis
+                voluptate iste minima autem architecto, molestiae temporibus suscipit ipsam, ullam delectus fuga, quasi
+                voluptates perferendis fugiat quaerat eveniet. Optio, ab consectetur. Ea corporis quasi quod, cumque
+                dolorum velit beatae asperiores necessitatibus voluptate!</p>
+        </aside>
+        <hr>
+        <footer>
+            <h3>This is Footer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugit quisquam explicabo harum sunt,
+                distinctio autem ipsa dolorum nisi optio, ut voluptates! Repellat, pariatur a? Aspernatur illo enim
+                mollitia ad quis odio commodi magnam minima ut quibusdam dolor nisi voluptatibus eum aliquid vel
+                deserunt est optio maxime fuga, possimus doloremque atque ullam aperiam. Facere itaque praesentium quis
+                vitae sit cumque? Eligendi error laudantium eaque architecto, sequi placeat reiciendis nostrum
+                praesentium ab illo est unde porro corrupti accusantium molestiae odit maiores natus aperiam hic! Ad
+                optio reiciendis et nam eius id libero reprehenderit pariatur, odit consectetur nesciunt. Cupiditate,
+                soluta facere dolore tenetur tempora pariatur praesentium suscipit sapiente magnam quos eaque! Hic
+                inventore minus dolorem sint nihil dolor eveniet suscipit totam laborum fugit fuga quo quibusdam,
+                officia harum ad eligendi ut deleniti corrupti aut veritatis tempore nisi? Incidunt totam dolorem
+                mollitia! Qui possimus repudiandae neque quos magnam reprehenderit obcaecati voluptates suscipit est?
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
